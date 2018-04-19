@@ -376,5 +376,4 @@ module.exports = function(mongoDBConnectionString){
             });
         },
     }
-
 }
