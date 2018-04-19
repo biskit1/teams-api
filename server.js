@@ -3,8 +3,6 @@ const mongoDBConnectionString = "mongodb://cdanzinger:Danzinger1@ds117148.mlab.c
 const HTTP_PORT = "https://infinite-inlet-51839.herokuapp.com/"
 
 
-
-
 const express = require("express");
 const bodyParser = require('body-parser');
 
