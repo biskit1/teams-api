@@ -15,9 +15,5 @@
     "express": "^4.15.4",
     "express-favicon": "^2.0.0",
     "mongoose": "^4.11.7"
-  },
-  "engines": {
-    "node": "8.0.0",
-    "npm": "5.0.0"
   }
 }

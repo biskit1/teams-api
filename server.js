@@ -4,6 +4,7 @@ const HTTP_PORT = "https://infinite-inlet-51839.herokuapp.com/"
 
 
 const express = require("express");
+const favicon = require('express-favicon');
 const bodyParser = require('body-parser');
 
 const cors = require("cors");
@@ -14,6 +15,7 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(cors());
+app.use(favicon(__dirname + '/public/favicon.png'));
 
 // "Employee" Routes
 
