@@ -4,7 +4,6 @@ const HTTP_PORT = "https://infinite-inlet-51839.herokuapp.com/"
 
 
 const express = require("express");
-const favicon = require('express-favicon');
 const bodyParser = require('body-parser');
 
 const cors = require("cors");
@@ -15,7 +14,6 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(cors());
-app.use(favicon(__dirname + '/public/favicon.png'));
 
 // "Employee" Routes
 
@@ -251,7 +249,7 @@ app.use((req, res) => {
 // Connect to the DB and start the server
 
 data.connect().then(()=>{
-    app.listen(HTTP_PORT, ()=>{console.log("API listening on: " + HTTP_PORT)});
+    app.listen(HTTP_PORT, ()=>{console.log("API listening on ip: " + HTTP_PORT)});
 })
 .catch((err)=>{
     console.log("unable to start the server: " + err);
