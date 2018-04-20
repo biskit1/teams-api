@@ -288,6 +288,8 @@ app.post("/teams", (req, res) => {
 app.post("/register", (req, res) => {
     dataAuth.registerUser(req.body)
     .then((msg) => {
+        res.json({ "message": msg });
+    }).catch((msg)=>{
         res.status(422).json({ "message": msg });
     });
 });
@@ -311,9 +313,6 @@ app.post("/login", (req, res) => {
         res.status(422).json({ "message": msg });
     });
 });
-
-
-
 
 ////////////////////
 
