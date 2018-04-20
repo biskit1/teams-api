@@ -1,6 +1,6 @@
 const mongoDBConnectionString = "mongodb://cdanzinger:Danzinger1@ds117148.mlab.com:17148/teams-api-db";
-//const HTTP_PORT = process.env.PORT || 8081;
-const HTTP_PORT = "https://infinite-inlet-51839.herokuapp.com/"
+const HTTP_PORT = process.env.PORT || 8080;
+//const HTTP_PORT = "https://infinite-inlet-51839.herokuapp.com/"
 
 
 const express = require("express");
