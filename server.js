@@ -60,7 +60,7 @@ app.use(passport.initialize());
 
 // "Employee" Routes
 
-app.get("/employees", (req,res) => {
+app.get("/employees", passport.authenticate('jwt', { session: false }), (req,res) => {
     data.getAllEmployees().then((data)=>{
         res.json(data);
     })
